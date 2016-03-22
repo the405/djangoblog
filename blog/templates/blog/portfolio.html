@@ -5,11 +5,11 @@
   <div class="navbar">
     <div class="container-top">
       <ul class="navbar-items">
-        <li class="left"><a href="/index.html">The405</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a class="active" href="/portfolio.html">Portfolio</a></li>
-        <li><a href="/index.html">Home</a></li>
+        <li class="left"><a href="{% url 'index' %}">The405</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+        <li><a class="active" href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'index' %}">Home</a></li>
       </ul>
     </div>
   </div>
