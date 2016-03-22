@@ -1,0 +1,62 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="container-top">
+      <ul class="navbar-items">
+        <li class="left"><a href="/index.html">The405</a></li>
+        <li><a class="active" href="/about.html">About</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Content for page starts here -->
+  <div class="content">
+    <div class="home">
+      <h1>Ahti Ruusuvuori</h1>
+      <hr class="divider">
+      <ul class="social">
+        <li>
+          <a href="mailto:ahti.ruusuvuori@gmail.com" target="_top" class="social-icon"><i class="fa fa-envelope"> 
+Email</i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ahti.ruusuvuori" target="_blank" class="social-icon"><i class="fa 
+fa-facebook"> Facebook</i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ahtiruusuvuori" target="_blank" class="social-icon"><i class="fa 
+fa-linkedin"> LinkedIn</i></a>
+        </li>
+        <li>
+          <a href="https://github.com/the405" target="_blank" class="social-icon"><i class="fa fa-github"> 
+GitHub</i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- About section -->
+    <a name="about"></a>
+    <div class="about">
+      <h2 class="section-heading">Student, idealist, geek.</h2>
+      <div class="image">
+        <img class="portrait" src="http://i.imgur.com/tWnKjBN.jpg"></img>
+      </div>
+      <div class="about-text">
+        <p> I am a comp-sci student working on his master's degree. As someone curious about technology and science, 
+I have a knack for all things IT.</p>
+        <p>With a love for puzzles and problem solving, I enjoy the challenges the field offers. My hobbies have 
+revolved around computers ever since I was a kid, and to this day I continue to follow their increasing potential 
+and infinite applications.</p>
+        <p>Things I can do:<br>
+          <b>Programming</b> | C/C++, Python<br>
+          <b>Web</b> | JavaScript, Django with Python, HTML5, CSS, some basic SQL<br>
+          <b>Networking</b> | Designing & implementing small scale company networks and their security measures, 
+configuring network devices<br>
+          <b>Other tools</b> | Git, LaTeX, some netsec related jingles</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

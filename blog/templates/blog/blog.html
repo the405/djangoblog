@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="container-top">
+      <ul class="navbar-items">
+        <li class="left"><a href="/index.html">The405</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a class="active" href="/blog.html">Blog</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Content for page starts here -->
+  <div class="content">
+    <!-- Portfolio section -->
+    <a name="portfolio"></a>
+    <div class="portfolio">
+      <h3>This is where the blog will eventually show up</h3>
+
+      {% for post in posts %}
+        <div>
+          <p>published: {{ post.published_date }}</p>
+          <h1><a href="">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaks }}</p>
+        </div>
+      {% endfor %}
+
+
+    </div>
+  </div>
+{% endblock %}
