@@ -147,6 +147,15 @@ ul.social a:visited {
   margin: 0 auto;
   padding-bottom: 53px;
 }
+
+.no-decoration a {
+  text-decoration: none;
+}
+
+.no-decoration a:hover {
+  text-decoration: underline;
+}
+
 /* Footnote */ .footnote {
   bottom: 0;
   position: fixed;

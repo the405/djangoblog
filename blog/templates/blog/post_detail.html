@@ -22,15 +22,19 @@
     <a name="portfolio"></a>
     <div class="portfolio">
 
-      {% for post in posts %}
-        <div>
-          <h2 class="no-decoration"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-          <p>{{ post.created_date }}</p>
-          <p>{{ post.body|linebreaks }}</p>
-        </div>
-      {% endfor %}
+
+    <div class="post">
+        {% if post.created_date %}
+            <div class="date">
+                {{ post.created_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.body|linebreaks }}</p>
+    </div>
 
 
     </div>
   </div>
 {% endblock %}
+
