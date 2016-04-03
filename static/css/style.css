@@ -169,6 +169,15 @@ ul.social a:visited {
   text-decoration: underline;
 }
 
+.truncate, .truncate p{
+ height: 16px;
+ display:block;
+ text-overflow: ellipsis;
+ -o-text-overflow: ellipsis;
+ -ms-text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
 
 /* Footnote */ .footnote {
   bottom: 0;
