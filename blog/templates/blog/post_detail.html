@@ -24,12 +24,15 @@
 
 
     <div class="post">
+        <h1>{{ post.title }}</h1>
+
         {% if post.created_date %}
-            <div class="date">
+            <div class="date float-right">
                 {{ post.created_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+
+        <a href="{% url 'post_edit' pk=post.pk %}"></a>
         <p>{{ post.body|linebreaks }}</p>
     </div>
 

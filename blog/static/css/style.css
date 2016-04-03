@@ -9,6 +9,9 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
+/* font-family: 'Jura', sans-serif; */
+
 html {
   overflow-y: scroll;
 }
@@ -74,6 +77,15 @@ ul.navbar-items .left {
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 }
+
+.date { 
+	color: #888; 
+	text-align: right; 
+	margin: 4px 0 5px 0; 
+	padding: 0.4em 0 0 0; 
+	border-top: 1px solid #555;
+}
+
 /* Social media links */ ul.social {
   text-align: center;
   text-decoration: none;
@@ -150,10 +162,12 @@ ul.social a:visited {
 
 .no-decoration a {
   text-decoration: none;
+  color: #000;
 }
 
 .no-decoration a:hover {
   text-decoration: underline;
+  color: #333;
 }
 
 /* Footnote */ .footnote {

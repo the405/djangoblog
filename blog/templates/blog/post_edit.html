@@ -22,18 +22,17 @@
     <a name="portfolio"></a>
     <div class="portfolio">
 
-    <!-- <div class="no-decoration"><a href="{% url 'post_new' %}">New post</a></div> -->
 
-      {% for post in posts %}
-        <div>
-          <h2 class="no-decoration"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-          <p>{{ post.body|linebreaks }}</p>
-          <p class="date">{{ post.created_date }} | <a href="{% url 'post_detail' pk=post.pk %}">Read more</a> | Comments</p>
-          <br />
-        </div>
-      {% endfor %}
+
+
+<h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
 
 
     </div>
   </div>
 {% endblock %}
+
